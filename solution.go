@@ -23,15 +23,12 @@ func CalcSquare(sideLen float64, sidesNum SidesType) float64 {
 	var square float64
 
 	switch sidesNum {
-	// Circle
-	case sidesNum == SidesCircle:
+	case SidesCircle:
 		square = math.Pi * sideLen * sideLen
-	// Triangle
-	case sidesNum == SidesTriangle:
+	case SidesTriangle:
 		p := (sideLen * 3) / 2
 		square = math.sqrt(p * ((p - sideLen) * 3))
-	// Square
-	case sidesNum == SidesSquare:
+	case SidesSquare:
 		square = sideLen * sideLen
 	default:
 		square = 0
