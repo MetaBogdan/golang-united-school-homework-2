@@ -27,7 +27,7 @@ func CalcSquare(sideLen float64, sidesNum SidesType) float64 {
 		square = math.Pi * sideLen * sideLen
 	case SidesTriangle:
 		p := (sideLen * 3) / 2
-		square = math.sqrt(p * ((p - sideLen) * 3))
+		square = math.Sqrt(p * ((p - sideLen) * 3))
 	case SidesSquare:
 		square = sideLen * sideLen
 	default:
